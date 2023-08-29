@@ -28,6 +28,8 @@ input{
     justify-content: center;
     width: 100%;
     border-radius: 40px;
+    color: blue;
+    background-color: gray;
 }
 .center{
     display: flex;
