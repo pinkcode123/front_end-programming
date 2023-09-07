@@ -1,0 +1,97 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid green;
+    color: rgb(82, 4, 4);
+    height: 100px;
+    font-style: italic;
+   
+}
+input{
+    display: block;
+    box-shadow: 2px 1px 4px lightslategray;
+    border-radius: 6px;
+    padding: 6px;
+    width: 105%;
+    
+}
+
+.form { 
+    border: 1px solid green;
+    margin-top: 2%;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px  lightslategray ;
+}
+
+#sub{
+    display: block;
+    justify-content: center;
+    width: 116%;
+    border-radius: 40px;
+    color:red;
+
+   
+}
+#sub:hover{
+    background-color: rgb(74, 206, 74);
+
+    
+   
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+
+   
+    
+}
+#HP{
+    height: 80PX;
+    width: 80PX;
+    border-radius: 50%;
+    box-shadow: 3px 4px 5px gray;
+
+}
+
+.ps{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+body{
+ 
+    margin: 0px;
+    
+}
+.top img{
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    flex-direction: row;
+   
+    
+
+}
+.top h4{
+    float: right ;
+    
+    
+
+} 
+.top{
+    
+    border-top: 2px solid green;
+    
+
+}
