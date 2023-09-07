@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/style/table.css">
+</head>
+<body>
+    <div class="container">
+        <table border="1px" align="center" style="margin-top: 12px; width: 80vw;">
+            
+            <tr>
+                <th colspan="9">
+                  Sales Record
+                </th>
+            </tr>
+            <tr>
+                
+                <td colspan="5">Products</td>
+                <td colspan="4">Sales</td>
+                
+                
+                
+            </tr>
+            <tr>
+                <td>S/N</td>
+                <td>Products</td>
+                <td>stock</td>
+                <td>CP</td>
+                <td>SP</td>
+                <td>Product</td>
+                <td style="width: 2px;">Quantity</td>
+                <td colspan="2">Amount</td>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>beans</td>
+                <td>20</td>
+                <td>18000</td>
+                <td>36000</td>
+                <td>
+                    <select name="" id="opt">
+                       <option value="Products"></option>
+                       <option value="Products">beans</option>
+                       <option value="Products">custard</option>
+                       <option value="Products">garri</option>
+                       <option value="Products">spagetti</option>
+                       <option value="Products">indomie</option>
+                    </select>
+                </td>
+                <td> 
+                    <INput type="text" id="txt">
+                </td>
+                <td id="dispkay">1000</td>
+                <td>
+                    <input type="submit" id="submit">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>garri</td>
+                <td>10</td>
+                <td>10000</td>
+                <td>20000</td>
+                <td> 
+                    <select name="" id="opt">
+                        <option value="Products"></option>
+                        
+                        <option value="Products">beans</option>
+                        <option value="Products">custard</option>
+                        <option value="Products">garri</option>
+                        <option value="Products">spagetti</option>
+                        <option value="Products">indomie</option>
+                    </select>
+                </td>
+                <td> 
+                    <INput type="text" id="txt">
+                </td>
+                <td id="dispkay"></td>
+                <td>
+                    <input type="submit" id="submit">
+                </td>
+                
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>spagetti</td>
+                <td>18</td>
+                <td >1000</td>
+                <td>50</td>
+                <td id="pro">
+                    <select name="" id="opt">
+                        <option value="Products"></option>
+                        <option value="Products">beans</option>
+                        <option value="Products">custard</option>
+                        <option value="Products">garri</option>
+                        <option value="Products">spagetti</option>
+                        <option value="Products">indomie</option>
+                    </select>
+                </td>
+                <td> 
+                    <INput type="text" id="txt">
+                </td>
+                <td id="dispkay"></td>
+                <td>
+                    <input type="submit" id="submit">
+                </td>
+                
+                
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>custard</td>
+                <td>5 </td>
+                <td>500</td>
+                <td>800</td>
+                <td >
+                    <select name="dropdown" id="opt">
+                        <option value="Products"></option>
+                       
+                        <option value="Products">beans</option>
+                        <option value="Products">custard</option>
+                        <option value="Products">garri</option>
+                        <option value="Products">spagetti</option>
+                        <option value="Products">indomie</option>
+                     </select>
+                </td>
+                <td> <INput type="text" id="txt"></td>
+                <td id="dispkay" >
+                    <button type="button">click</button> 
+                </td>
+                <td>
+                    <input type="submit"id="submit">
+                </td>
+                
+                
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>indomie</td>
+                <td>10</td>
+                <td>3000</td>
+                <td>3800</td>
+                <td>
+                    <select name="" id="opt">
+                        <option value="Products"></option>
+                        
+                        <option value="Products">beans</option>
+                        <option value="Products">spagetti</option>
+                        <option value="Products">garri</option>
+                        <option value="Products">indomie</option>
+                        <option value="Products">custard</option>
+                     </select>
+                </td>
+                <td>
+                    <INput type="text" id="txt">
+                </td>
+                <td id="dispkay"></td>
+                <td>
+                    <input type="submit"id="submit">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="7" > 
+                    <button type="submit" style="width: 100%;" id="total">  TOTAL</button>
+                </td>
+                <td colspan="3" id="prx"></td>
+                
+                
+                
+            </tr>
+            <tr>
+                <td colspan="7"><button type="submit" style="width: 100%;" id="CHECKPT">  CHECK PROFIT</button></td>
+                <td colspan="3" id="prz"></td>  
+                
+                
+                
+            </tr>
+        </table>
+    </div>
+    <script src="static/script/table.js"></script>
+</body>
+</html>

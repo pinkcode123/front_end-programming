@@ -1,0 +1,40 @@
+table{
+   border-collapse: collapse;
+  
+}
+.container{
+ 
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+ 
+}
+#submit{
+  width: 100%;
+  
+}
+#opt{
+  border: none;
+  outline: 0;
+}
+input[type ="text"]{
+  border: none;
+  background: none;
+  outline: 0;
+  width: 50px;
+}
+input[type = "submit"]{
+  border: none;
+  background: none;
+
+
+}
+#total{
+  border: none;
+  background: none;
+}
+#CHECKPT{
+  border: none;
+  background: none;
+}
+
