@@ -1,0 +1,30 @@
+.class{
+    height: 50px;
+    
+    
+}
+.class li{
+    display: inline;
+   word-spacing: 1px;
+   text-decoration: underline rgb(225,0, 0.5);
+   color:rgb(162, 0, 0.6);
+
+   
+
+}
+.class ul{
+    word-spacing: 10px;
+    float: right;
+
+    
+}
+.class li:hover{
+    color: brown;
+    text-decoration: underline grey;
+    border: 1px solid gold;
+    padding: 5px;
+    box-shadow: 1px 1px 20px 1px gold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
