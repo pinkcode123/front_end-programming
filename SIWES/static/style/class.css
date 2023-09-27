@@ -35,8 +35,6 @@ input[type='text']{
 .icon1{
     justify-items: center;
     align-items: center;
-    
-    
    
   
 
@@ -62,10 +60,12 @@ input[type='password']{
     
 }
 input[type='button']{
+    border: none;
     background:black;
     color: white;
     width: 50%;
     border-radius: 12px;
+    outline: 0;
 }
 
 

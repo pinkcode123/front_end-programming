@@ -1,14 +1,17 @@
 table{
    border-collapse: collapse;
    font-size: 20px;
-   box-shadow: 20px 26px 62px 2px ;
-   border-radius: 10px;
-  background-image: url(../images/background.jpg);
+   background-image: url(../images/background.jpg);
+   height: 80vh;
+   width: 80vw;
+   
+   
 
   
 }
 .container{
   text-align: center;
+
 }
 option{
 outline:none ;
@@ -58,6 +61,14 @@ input[type = "submit"]{
   border: none;
   background: none;
   font-size: 20px;
+  cursor:pointer ;
+
+
+}
+input:hover[type = "submit"]{
+   cursor:pointer ;
+   color:yellow;
+   opacity:0.5 ;
 
 
 }
@@ -65,13 +76,40 @@ input[type = "submit"]{
   border: none;
   background: none;
   font-size: 20px;
+  
 }
+#total:hover{
+  cursor:pointer ;
+  color: blue;
+  opacity: 0.5;
+}
+
 #CHECKPT{
   border: none;
   background: none;
   font-size: 20px;
 }
+#CHECKPT:hover{
+  cursor: pointer;
+  color:red;
+  opacity: 0.5;
+
+  
+
+}
+th{
+  color:rgb(203, 138, 19);
+  font-size: 25px;
+}
+#bode td{
+  text-decoration:none;
+  color:yellow;
+  text-shadow: 2px 1px 2px black ;
+}
 body{
   background-color:rgb(243, 217, 230);
 }
+/* .play{
+  display: none;
+} */
 

@@ -16,26 +16,46 @@ document.getElementById("submit").onclick=function(){
    
     if (product=="Products1"){
        let Amount =sellingprice*Quantity;
+       let profit1 = sellingprice - costprice;
+        let profit = profit1 * Quantity;
+
+        document.getElementById('play1').textContent = profit
         document.getElementById("display").textContent=Amount
         
     }
     else if (product=="Products2"){
         let Amount=sellingprice4*Quantity;
-         document.getElementById("display").textContent=Amount
+        let profit1 = sellingprice - costprice;
+        let profit = profit1 * Quantity;
+
+        document.getElementById('play1').textContent = profit
+        document.getElementById("display").textContent=Amount
          
      }
     else if(product=="Products3"){
         let Amount =sellingprice2*Quantity;
+        let profit1 = sellingprice - costprice;
+        let profit = profit1 * Quantity;
+
+        document.getElementById('play1').textContent = profit
          document.getElementById("display").textContent=Amount
          
      }
     else if(product=="Products4"){
         let Amount =sellingprice3*Quantity;
+        let profit1 = sellingprice3 - costprice;
+        let profit = profit1 * Quantity;
+
+        document.getElementById('play1').textContent = profit
          document.getElementById("display").textContent=Amount
          
      }
     else if(product=="Products5"){
         let Amount =sellingprice5*Quantity;
+        let profit1 = sellingprice5 - costprice;
+        let profit = profit1 * Quantity;
+
+        document.getElementById('play1').textContent = profit
          document.getElementById("display").textContent=Amount
          
      }
@@ -176,7 +196,7 @@ document.getElementById("submit4").onclick=function(){
         document.getElementById("display4").textContent= inva
         }
         }
-//row 3
+//row 5
     document.getElementById("submit5").onclick=function(){
         let product = document.getElementById("opt5").value;
         let costprice = document.getElementById("cp").textContent;
@@ -197,7 +217,7 @@ document.getElementById("submit4").onclick=function(){
         
     }
     else if (product=="Products2"){
-        let Amount=sellingprice4*Quantity3;
+        let Amount=sellingprice3*Quantity3;
             document.getElementById("display5").textContent=Amount
             
         }
@@ -207,12 +227,12 @@ document.getElementById("submit4").onclick=function(){
             
         }
     else if(product=="Products4"){
-        let Amount =sellingprice3*Quantity3;
+        let Amount =sellingprice5*Quantity3;
             document.getElementById("display5").textContent=Amount
             
         }
     else if(product=="Products5"){
-        let Amount =sellingprice5*Quantity3;
+        let Amount =sellingprice4*Quantity3;
             document.getElementById("display5").textContent=Amount
             
         }
@@ -226,35 +246,44 @@ document.getElementById("submit4").onclick=function(){
 
 }
 document.getElementById("total").onclick=function(){
-    dis1=parseInt(display.textContent);
-    dis2=parseInt(display2.textContent);
-    dis3=parseInt(display3.textContent);
-    dis4=parseInt(display4.textContent);
-    dis5=parseInt(display5.textContent);
-    total= dis1+dis2+dis3+dis4+dis5
+    dis1=parseInt(display.textContent),10;
+    dis2=parseInt(display2.textContent),10;
+    dis3=parseInt(display3.textContent),10;
+    dis4=parseInt(display4.textContent),10;
+    dis5=parseInt(display5.textContent),10;
+    total=parseInt (dis1+dis2+dis3+dis4+dis5),10;
     document.getElementById("prx").textContent= total
     
 }
-document.getElementById("CHECKPT").onclick=function(){
-    chk1=parseInt(sp.textContent)-parseInt(cp.textContent);
-    chk2=parseInt(sp2.textContent)-parseInt(cp2.textContent);
-    chk3=parseInt(sp3.textContent)-parseInt(cp3.textContent);
-    chk4=parseInt(sp4.textContent)-parseInt(cp4.textContent);
-    chk5=parseInt(sp5.textContent)-parseInt(cp5.textContent);
-    qua1=parseInt(txt.value);
-    qua2=parseInt(txt2.value);
-    qua3=parseInt(txt3.value);
-    qua4=parseInt(txt4.value);
-    qua5=parseInt(txt5.value);
-    profit1=parseInt(dis1-(chk1*qua1));
-    profit2=parseInt(dis2-(chk2*qua2));
-    profit3=parseInt(dis3-(chk3*qua3));
-    profit4=parseInt(dis4-(chk4*qua4));
-    profit5=parseInt(dis5-(chk5*qua5));
-    let profit=parseInt(profit1+profit2+profit3+profit4+profit5)
-    document.getElementById("prz").textContent=profit
-   
+// document.getElementById("CHECKPT").onclick=function(){
+//    /* chk1=parseInt(sp.textContent)-parseInt(cp.textContent);
+//     chk2=parseInt(sp2.textContent)-parseInt(cp2.textContent);
+//     chk3=parseInt(sp3.textContent)-parseInt(cp3.textContent);
+//     chk4=parseInt(sp4.textContent)-parseInt(cp4.textContent);
+//     chk5=parseInt(sp5.textContent)-parseInt(cp5.textContent);
+//     qua1=parseInt(txt.value);
+//     qua2=parseInt(txt2.value);
+//     qua3=parseInt(txt3.value);
+//     qua4=parseInt(txt4.value);
+//     qua5=parseInt(txt5.value);
+//     profit1=parseInt(dis1-(chk1*qua1));
+//     profit2=parseInt(dis2-(chk2*qua2));
+//     profit3=parseInt(dis3-(chk3*qua3));
+//     profit4=parseInt(dis4-(chk4*qua4));
+//     profit5=parseInt(dis5-(chk5*qua5));
+//     profit=parseInt(profit1+profit2+profit3+profit4+profit5)
+//     document.getElementById("prz").textContent=profit
+//    */
+//   pro1=dis1-(parseInt(cp.textContent)*parseInt(txt.value)),10;
+//   pro2=dis2-(parseInt(cp2.textContent)*parseInt(txt2.value)),10;
+//   pro3=dis3-(parseInt(cp3.textContent)*parseInt(txt3.value)),10;
+//   pro4=dis4-(parseInt(cp4.textContent)*parseInt(txt4.value)),10;
+//   pro5=dis5-(parseInt(cp5.textContent)*parseInt(txt5.value)),10;
+//  alert(pro4)
+
+//   checkprofit=parseInt(pro1+pro2+pro3+pro4+pro5),10;
+//   document.getElementById("prz").textContent=checkprofit
 
     
     
-}
+// }
