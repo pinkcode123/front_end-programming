@@ -24,8 +24,8 @@ document.getElementById("submit").onclick=function(){
         
     }
     else if (product=="Products2"){
-        let Amount=sellingprice4*Quantity;
-        let profit1 = sellingprice - costprice;
+        let Amount=sellingprice2*Quantity;
+        let profit1 = sellingprice2 - costprice2;
         let profit = profit1 * Quantity;
 
         document.getElementById('play1').textContent = profit
@@ -33,8 +33,8 @@ document.getElementById("submit").onclick=function(){
          
      }
     else if(product=="Products3"){
-        let Amount =sellingprice2*Quantity;
-        let profit1 = sellingprice - costprice;
+        let Amount =sellingprice3*Quantity;
+        let profit1 = sellingprice3- costprice3;
         let profit = profit1 * Quantity;
 
         document.getElementById('play1').textContent = profit
@@ -42,8 +42,8 @@ document.getElementById("submit").onclick=function(){
          
      }
     else if(product=="Products4"){
-        let Amount =sellingprice3*Quantity;
-        let profit1 = sellingprice3 - costprice;
+        let Amount =sellingprice4*Quantity;
+        let profit1 = sellingprice4 - costprice;
         let profit = profit1 * Quantity;
 
         document.getElementById('play1').textContent = profit
@@ -68,43 +68,69 @@ document.getElementById("submit").onclick=function(){
     
     // for row 2
     document.getElementById("submit2").onclick=function(){
-    let product = document.getElementById("opt2").value;
-    let Quantity2 =parseInt(document.getElementById('txt2').value);
-    let sellingprice =parseInt(document.getElementById("sp").textContent);
-    let sellingprice2 =parseInt(document.getElementById("sp2").textContent);
-    let sellingprice3 =parseInt(document.getElementById("sp3").textContent);
-    let sellingprice4 =parseInt(document.getElementById("sp4").textContent);
-    let sellingprice5 =parseInt(document.getElementById("sp5").textContent);
-   
-    if (product=="Products1"){
-       let Amount =sellingprice*Quantity2;
-        document.getElementById("display2").textContent=Amount
-        
-    }
-    else if (product=="Products2"){
-        let Amount=sellingprice4*Quantity2;
-         document.getElementById("display2").textContent=Amount
-         
-     }
-    else if(product=="Products3"){
-        let Amount =sellingprice2*Quantity2;
-         document.getElementById("display2").textContent=Amount
-         
-     }
-    else if(product=="Products4"){
-        let Amount =sellingprice3*Quantity2;
-         document.getElementById("display2").textContent=Amount
-         
-     }
-    else if(product=="Products5"){
-        let Amount =sellingprice5*Quantity2;
-         document.getElementById("display2").textContent=Amount
-         
-     } 
-     else{
-        inva="invalid product"
-        document.getElementById("display2").textContent= inva
-     }
+        let product = document.getElementById("opt").value;
+        let costprice = document.getElementById("cp").textContent;
+        let costprice2 = document.getElementById("cp2").textContent;
+        let costprice3 = document.getElementById("cp3").textContent;
+        let costprice4 = document.getElementById("cp4").textContent;
+        let costprice5 = document.getElementById("cp5").textContent;
+        let Quantity =parseInt(document.getElementById('txt2').value);
+        let sellingprice =parseInt(document.getElementById("sp").textContent);
+        let sellingprice2 =parseInt(document.getElementById("sp2").textContent);
+        let sellingprice3 =parseInt(document.getElementById("sp3").textContent);
+        let sellingprice4 =parseInt(document.getElementById("sp4").textContent);
+        let sellingprice5 =parseInt(document.getElementById("sp5").textContent);
+       
+        if (product=="Products1"){
+           let Amount =sellingprice*Quantity;
+           let profit1 = sellingprice - costprice;
+            let profit = profit1 * Quantity;
+    
+            document.getElementById('play2').textContent = profit
+            document.getElementById("display2").textContent=Amount
+            
+        }
+        else if (product=="Products2"){
+            let Amount=sellingprice2*Quantity;
+            let profit1 = sellingprice2 - costprice2;
+            let profit = profit1 * Quantity;
+    
+            document.getElementById('play2').textContent = profit
+            document.getElementById("display2").textContent=Amount
+             
+         }
+        else if(product=="Products3"){
+            let Amount =sellingprice3*Quantity;
+            let profit1 = sellingprice3- costprice3;
+            let profit = profit1 * Quantity;
+    
+            document.getElementById('play2').textContent = profit
+             document.getElementById("display2").textContent=Amount
+             
+         }
+        else if(product=="Products4"){
+            let Amount =sellingprice4*Quantity;
+            let profit1 = sellingprice4 - costprice4;
+            let profit = profit1 * Quantity;
+    
+            document.getElementById('play2').textContent = profit
+             document.getElementById("display2").textContent=Amount
+             
+         }
+        else if(product=="Products5"){
+            let Amount =sellingprice5*Quantity;
+            let profit1 = sellingprice5 - costprice5;
+            let profit = profit1 * Quantity;
+    
+            document.getElementById('play2').textContent = profit
+             document.getElementById("display2").textContent=Amount
+             
+         }
+         else{
+            inva="invalid product"
+            document.getElementById("display5").textContent= inva
+         }
+    
         }
 //row 3
 document.getElementById("submit3").onclick=function(){
